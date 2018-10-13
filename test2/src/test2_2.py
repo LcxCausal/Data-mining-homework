@@ -36,12 +36,6 @@ cater_sale_missing_data = xlrd.open_workbook(cater_sale_missing_path)
 cater_sale_missing_sheet = cater_sale_missing_data.sheets()[0]
 cater_sale_rows_count = cater_sale_missing_sheet.nrows
 
-# 显示原始数据
-print('显示原始的数据：')
-for i in range(cater_sale_rows_count):
-    print('{0}      {1}'.format(cater_sale_missing_sheet.row_values(i)[0],
-                                cater_sale_missing_sheet.row_values(i)[1]))
-
 # 读取cater_sale_missing.xls文件的列名
 first_column_name = cater_sale_missing_sheet.row_values(0)[0]
 second_column_name = cater_sale_missing_sheet.row_values(0)[1]
@@ -82,15 +76,5 @@ for i in range(first_column_data.__len__()):
     missing_data_processing_sheet.write(i + 1, 1, second_column_data[i])
 
 missing_data_processing_data.save(missing_data_processing_path)
-
-# 显示插值后的数据
-print('显示插值后的数据：')
-for i in range(cater_sale_rows_count):
-    if i == 0:
-        print('{0}      {1}'.format(first_column_name,
-                                    second_column_name))
-    else:
-        print('{0}      {1}'.format(first_column_data[i - 1],
-                                    second_column_data[i - 1]))
 
 print('Completed!')
