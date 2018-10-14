@@ -94,6 +94,7 @@ for i in range(cater_sale_column_data.__len__()):
 missing_data_processing_data.save(missing_data_processing_path)
 
 # 计算任意两款菜式之间的相关系数 
+# test
 df = pandas.DataFrame(np.array(cater_sale_column_data))
 
 print('Completed!')
