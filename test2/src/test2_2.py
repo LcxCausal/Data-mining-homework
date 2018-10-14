@@ -11,6 +11,9 @@ import xlwt
 # 使用lagrange插值算法..
 from scipy.interpolate import lagrange
 
+# 使用Pandas的特征统计函数
+import pandas
+
 
 # 通过lagrange插值算法对数组进行插值.
 def ploy_interpolate_column(data_array, index, range_count):
@@ -90,6 +93,7 @@ for i in range(cater_sale_column_data.__len__()):
 
 missing_data_processing_data.save(missing_data_processing_path)
 
-
+# 计算任意两款菜式之间的相关系数 
+df = pandas.DataFrame(np.array(cater_sale_column_data))
 
 print('Completed!')
