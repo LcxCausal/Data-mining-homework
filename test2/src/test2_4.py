@@ -18,6 +18,6 @@ b = (data - data.mean())/data.std()
 c = data/10**np.ceil(np.log10(data.abs().max()))
 
 # 输出所有规范化结果
-print a
-print b
-print c
+print(a)
+print(b)
+print(c)
