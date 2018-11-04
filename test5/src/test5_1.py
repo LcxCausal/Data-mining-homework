@@ -14,16 +14,57 @@
 
 # -*- encoding='utf-8' -*-
 import csv
-import os
-import numpy as np
-import pandas as pd
 
-
-# 1、	读入Iris.csv数据，并将数据的70%做为训练数据，30%做为测试数据
+# 1、读入Iris.csv数据，并将数据的70%做为训练数据，30%做为测试数据
 iris_file = '../data/iris.csv'
-iris_data = pd.read_csv(iris_file)
-iris_data_shape = iris_data.shape
-iris_row_count = iris_data_shape[0]
+iris_data = []
+training_data = []
+testing_data = []
+
+with open(iris_file) as iris_file_data:
+    data = csv.reader(iris_file_data)
+    for d in data:
+        iris_data.append(d)
+
+iris_data_rows = iris_data.__len__() - 1
+training_data_rows = int(iris_data_rows * 0.7)
+testing_data_rows = iris_data_rows - training_data_rows
+
+for i in range(1, training_data_rows + 1):
+    training_data.append(iris_data[i])
+
+for i in range(training_data_rows + 1, iris_data_rows + 1):
+    testing_data.append(iris_data[i])
+
+# 2、根据KNN算法思想，实现KNN算法，并使用训练数据训练KNN分类模型
+from numpy import *
+import KNN
+
+
+def classify(input_data, data_set, labels):
+    data_size = data_set.shape[0]
+    diff = tile(input_data, (data_size, 1)) - data_set
+    sq_diff = diff ** 2
+    square_dist = sum(sq_diff, axis=1)
+    dist = square_dist ** 0.5
+    sorted_dist_index = argsort(dist)
+    class_count = {}
+    k = data_set.__len__();
+
+    for i in range(k):
+        vote_label = labels[sorted_dist_index[i]]
+        class_count[vote_label] = class_count.get(vote_label, 0) + 1
+    max_count = 0
+    for key, value in class_count.items():
+        if value > max_count:
+            max_count = value
+            classes = key
+
+    return classes
+
+
+column_names = iris_data[0]
+data_set, labels = createDataSet()
+knn_data = classify(training_data, data_set, labels)
 
 1
-
