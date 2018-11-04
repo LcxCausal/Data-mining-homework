@@ -12,4 +12,18 @@
     2、	可视化模块
 """
 
+# -*- encoding='utf-8' -*-
+import csv
+import os
+import numpy as np
+import pandas as pd
+
+
+# 1、	读入Iris.csv数据，并将数据的70%做为训练数据，30%做为测试数据
+iris_file = '../data/iris.csv'
+iris_data = pd.read_csv(iris_file)
+iris_data_shape = iris_data.shape
+iris_row_count = iris_data_shape[0]
+
+1
 
