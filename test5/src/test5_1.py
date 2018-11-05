@@ -37,34 +37,57 @@ for i in range(training_data_rows + 1, iris_data_rows + 1):
     testing_data.append(iris_data[i])
 
 # 2、根据KNN算法思想，实现KNN算法，并使用训练数据训练KNN分类模型
-from numpy import *
-import KNN
+import numpy
 
 
-def classify(input_data, data_set, labels):
-    data_size = data_set.shape[0]
-    diff = tile(input_data, (data_size, 1)) - data_set
-    sq_diff = diff ** 2
-    square_dist = sum(sq_diff, axis=1)
-    dist = square_dist ** 0.5
-    sorted_dist_index = argsort(dist)
+def knn_classify(input, data_set, labels, k):
+    num_samples = data_set.shape[0]
+    diff = numpy.tile(input, (num_samples, 1)) - data_set
+    squared_diff = diff ** 2
+    squared_dist = numpy.sum(squared_diff, axis=1)
+    distance = squared_dist ** 0.5
+
+    sorted_dist_in_dices = numpy.argsort(distance)
     class_count = {}
-    k = data_set.__len__();
-
     for i in range(k):
-        vote_label = labels[sorted_dist_index[i]]
+        vote_label = labels[sorted_dist_in_dices[i]]
         class_count[vote_label] = class_count.get(vote_label, 0) + 1
+
     max_count = 0
     for key, value in class_count.items():
         if value > max_count:
             max_count = value
-            classes = key
+            max_index = key
 
-    return classes
+    return max_index
 
 
-column_names = iris_data[0]
-data_set, labels = createDataSet()
-knn_data = classify(training_data, data_set, labels)
+# 3、	使用剩余30%数据对KNN分类模型进行测试，并计算出分类精度。（可考虑使用可视化界面进行分类效果分析）
+labels = []
+t_data = []
+for t in training_data:
+    t_l = t[4]
+    labels.append(t_l)
+    t_data.append(t[:4])
 
-1
+k = 3
+result_labels = []
+r_labels = []
+for testing in testing_data:
+    result_labels.append(testing[4])
+    tmp_testing_data = numpy.array(testing[:4], dtype='S32')
+    tmp_training_data = numpy.array(t_data, dtype='S32')
+    tmp_testing_data = tmp_testing_data.astype('float64')
+    tmp_training_data = tmp_training_data.astype('float64')
+    result = knn_classify(tmp_testing_data, tmp_training_data, labels, k)
+    r_labels.append(result)
+
+correct_count = 0
+error_count = 0
+for i in range(r_labels.__len__()):
+    if r_labels[i] == result_labels[i]:
+        correct_count += 1
+    else:
+        error_count += 1
+
+print('分类精度：{0}'.format(correct_count * 1.0 / r_labels.__len__()))
