@@ -370,7 +370,5 @@ for t_i in range(0, target_data.__len__()):
         r_t_d.append(t_i)
         k_mean_data.append(np.array(r_t_d))
 
-k_mean_df = pd.DataFrame(k_mean_data, columns=np.append(['ZL', 'ZR', 'ZF', 'ZM', 'ZC', 'TYPE']))
-k_mean_df.to_excel(t_result_path)
-
-0
+k_mean_df = pd.DataFrame(k_mean_data, columns=np.array(['ZL', 'ZR', 'ZF', 'ZM', 'ZC', 'TYPE']))
+k_mean_df.to_excel(k_mean_file_path)
