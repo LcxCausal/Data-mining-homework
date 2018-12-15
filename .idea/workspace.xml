@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab48997f-00d7-438b-9137-b60ef16120d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test8/src/test8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Data-mining-homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data-mining-homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/data/output1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/test7/data/output1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/src/test7_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test7/src/test7_2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +21,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test7/src/test7_2.py">
+        <entry file="file://$PROJECT_DIR$/test8/src/test8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
+            <state relative-caret-position="380">
+              <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
+              <folding>
+                <element signature="e#244#270#0" expanded="true" />
+                <element signature="e#921#2159#0" />
+                <element signature="e#2236#2383#0" />
+                <element signature="e#3365#3673#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +67,7 @@
         <option value="$PROJECT_DIR$/test7/src/test7.py" />
         <option value="$PROJECT_DIR$/test7/src/test7_1.py" />
         <option value="$PROJECT_DIR$/test7/src/test7_2.py" />
+        <option value="$PROJECT_DIR$/test8/src/test8.py" />
       </list>
     </option>
   </component>
@@ -100,12 +108,6 @@
               <item name="Data-mining-homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data-mining-homework" type="462c0819:PsiDirectoryNode" />
               <item name="test7" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Data-mining-homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Data-mining-homework" type="462c0819:PsiDirectoryNode" />
-              <item name="test7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -136,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test7_2">
+  <component name="RunManager" selected="Python.test8">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Data-mining-homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,14 +244,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Data-mining-homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test8/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test8/src/test8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.test6" />
       <item itemvalue="Python.test6_2" />
       <item itemvalue="Python.test7_1" />
       <item itemvalue="Python.test7_2" />
+      <item itemvalue="Python.test8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test8" />
         <item itemvalue="Python.test7_2" />
         <item itemvalue="Python.test7_1" />
       </list>
@@ -281,13 +306,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2912254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2852459" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986577" weight="0.39344263" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32733223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28477904" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986577" weight="0.3927987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -343,12 +368,32 @@
     </expressions>
     <expressions id="breakpointCondition">
       <expression>
+        <expression-string>j.__eq__(44)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j = 44</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>date.__eq__('2014/2/29')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>unvisited_data.__len__()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>r_data.__len__()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>r_l_datetime.days / 31</expression-string>
         <language-id>Python</language-id>
@@ -384,16 +429,6 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>part_data_values[row_index][col_index]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>air_data_shape[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -416,13 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test5/src/test5_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -456,7 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pandas/core/frame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -485,33 +512,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexes/range.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="484" selection-start-line="484" selection-end-line="484" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="574" selection-start-line="574" selection-end-line="574" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexes/range.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/frame.py" />
     <entry file="file://$PROJECT_DIR$/test7/src/test7_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
+        <state relative-caret-position="316">
+          <caret line="367" column="39" selection-start-line="367" selection-start-column="39" selection-end-line="367" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test5/src/test5_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test7/src/test7_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
+        <state relative-caret-position="548">
           <caret line="92" column="11" selection-start-line="92" selection-end-line="92" selection-end-column="11" />
           <folding>
             <element signature="e#155#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test8/src/test8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
+          <folding>
+            <element signature="e#244#270#0" expanded="true" />
+            <element signature="e#921#2159#0" />
+            <element signature="e#2236#2383#0" />
+            <element signature="e#3365#3673#0" />
           </folding>
         </state>
       </provider>
